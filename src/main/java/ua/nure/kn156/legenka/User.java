@@ -5,9 +5,18 @@ import java.util.Date;
 
 public class User {
 	private Long id;
-	private String FirstName;
-	private String LastName;
+	private String firstName;
+	private String lastName;
 	private Date dateOfBirth;
+	public User(User user) {
+		id=user.getId();
+		firstName=user.getFirstName();
+		lastName=user.getLastName();
+		dateOfBirth=user.getDateOfBirth();
+	}
+	public User(){
+		
+	}
 	public Long getId() {
 		return id;
 	}
@@ -15,16 +24,16 @@ public class User {
 		this.id = id;
 	}
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 	public void setFirstName(String firstName) {
-		FirstName = firstName;
+		this.firstName = firstName;
 	}
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
 	public Date getDateOfBirth() {
 		return dateOfBirth;
