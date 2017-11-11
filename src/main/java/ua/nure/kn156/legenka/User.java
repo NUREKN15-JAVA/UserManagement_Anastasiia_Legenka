@@ -68,7 +68,7 @@ public class User {
 		int year = calendar.get(Calendar.YEAR);
 		int day = calendar.get(Calendar.DAY_OF_YEAR);
 		int years = currentYear - year -1;
-		if(currentDay>day)
+		if(currentDay>=day)
 			years++;
 		return years;
 	}

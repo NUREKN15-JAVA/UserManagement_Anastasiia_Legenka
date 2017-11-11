@@ -289,11 +289,11 @@ public class MainFrameTest extends JFCTestCase {
 
 			find(JPanel.class, "detailsPanel");
 
-			JTextField firstNameField = (JTextField) find(JTextField.class, "firstNameField");
-			JTextField lastNameField = (JTextField) find(JTextField.class, "lastNameField");
+			JTextField fullNameField = (JTextField) find(JTextField.class, "fullNameField");
+			JTextField ageField = (JTextField) find(JTextField.class, "ageField");
 			
-			assertEquals("George", firstNameField.getText());
-			assertEquals("Bush", lastNameField.getText());
+			assertEquals("George Bush", fullNameField.getText());
+			assertEquals("0", ageField.getText());
 
 			JButton okButton = (JButton) find(JButton.class, "okButton");
 			getHelper().enterClickAndLeave(new MouseEventData(this, okButton));
