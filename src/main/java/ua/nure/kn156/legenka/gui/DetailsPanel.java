@@ -50,8 +50,8 @@ import ua.nure.kn156.legenka.util.Messages;
 			if(fieldPanel == null){
 				fieldPanel = new JPanel();
 				fieldPanel.setLayout(new GridLayout(3,2));
-				addLabeledField(fieldPanel, "Полное имя", getFullNameField());  //$NON-NLS-1$
-				addLabeledField(fieldPanel,"Возраст", getAgeField());  //$NON-NLS-1$
+				addLabeledField(fieldPanel, Messages.getString("DetailsPanel.full_name"), getFullNameField());   //$NON-NLS-1$
+				addLabeledField(fieldPanel,Messages.getString("DetailsPanel.age"), getAgeField());   //$NON-NLS-1$
 			}
 			return fieldPanel;
 		}
@@ -90,7 +90,7 @@ import ua.nure.kn156.legenka.util.Messages;
 		}
 
 	    public void setUserData(User user) {
-	        getFullNameField().setText(user.getFirstName()+" "+user.getLastName());
+	        getFullNameField().setText(user.getFirstName()+" "+user.getLastName()); //$NON-NLS-1$
 	        getFullNameField().setEditable(false);
 	        getAgeField().setText(String.valueOf(user.getAge()));
 	        getAgeField().setEditable(false);
