@@ -17,7 +17,7 @@ public class EditPanel extends AddPanel {
 
 	public EditPanel(MainFrame parent) {
 		super(parent);
-		setName("editPanel"));
+		setName("editPanel");
 	}
 
 	public void setUserData(User user) {
