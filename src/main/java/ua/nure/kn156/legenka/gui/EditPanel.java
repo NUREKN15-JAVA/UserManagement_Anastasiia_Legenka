@@ -17,7 +17,7 @@ public class EditPanel extends AddPanel {
 
 	public EditPanel(MainFrame parent) {
 		super(parent);
-		setName(Messages.getString("EditPanel.0")); //$NON-NLS-1$
+		setName("editPanel"));
 	}
 
 	public void setUserData(User user) {
@@ -29,7 +29,7 @@ public class EditPanel extends AddPanel {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-		if (Messages.getString("EditPanel.1").equalsIgnoreCase(e.getActionCommand())) { //$NON-NLS-1$
+		if ("ok".equalsIgnoreCase(e.getActionCommand())) {
 			user.setFirstName(getFirstNameField().getText());
 			user.setLastName(getLastNameField().getText());
 			try {
