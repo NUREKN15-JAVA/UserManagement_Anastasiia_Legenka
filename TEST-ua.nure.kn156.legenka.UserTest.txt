@@ -1,0 +1,14 @@
+Testsuite: ua.nure.kn156.legenka.UserTest
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+
+Testcase: testGetFullNameForException took 0.013 sec
+	FAILED
+expected IllegalArgumentException
+junit.framework.AssertionFailedError: expected IllegalArgumentException
+	at ua.nure.kn156.legenka.UserTest.testGetFullNameForException(UserTest.java:39)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:36)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:456)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:140)
+
+Testcase: testGetAge took 0 sec
+Testcase: testGetFullName took 0 sec
