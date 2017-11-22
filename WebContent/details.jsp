@@ -9,8 +9,11 @@
    First name <input type="text" name="firstName" value="${user.firstName}"><br>
    Last name <input type="text" name="lastName" value="${user.lastName}"><br>
 <<<<<<< HEAD
+<<<<<<< HEAD
    Age <input type="text" name="age" value="${user.age}"><br>
 =======
+=======
+>>>>>>> d69b299e4d71fe7619c5778aad85eaf50c2d2390
    Age <input type="text" name="age" value="${user.age}"><br> 
 
 >>>>>>> d69b299e4d71fe7619c5778aad85eaf50c2d2390
