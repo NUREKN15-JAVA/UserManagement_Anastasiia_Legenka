@@ -3,9 +3,12 @@
 xmlns="http://java.sun.com/xml/ns/j2ee"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+<<<<<<< HEAD
 <welcome-file-list>
     <welcome-file>browse.jsp</welcome-file>
   </welcome-file-list>
+=======
+>>>>>>> a05faf03baa8afa08d05ac66d10e2199442f8680
 <servlet>
 <servlet-name>Browse Servlet</servlet-name>
 <servlet-class>ua.nure.kn156.legenka.web.BrowseServlet</servlet-class>
