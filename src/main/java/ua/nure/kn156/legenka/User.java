@@ -67,10 +67,10 @@ public class User {
 		calendar.setTime(dateOfBirth);
 		int year = calendar.get(Calendar.YEAR);
 		int day = calendar.get(Calendar.DAY_OF_YEAR);
-		int years = currentYear - year -1;
+		int age = currentYear - year -1;
 		if(currentDay>=day)
-			years++;
-		return years;
+			age++;
+		return age;
 	}
 	
 	public boolean equals(Object obj){
